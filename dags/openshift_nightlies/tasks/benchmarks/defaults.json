@@ -50,6 +50,17 @@
                 "CLEANUP_WHEN_FINISH": "true",
                 "CLEANUP": "true"
             }
-        }
+        },
+	{
+            "name": "upgrades",
+            "workload": "upgrade-perf",
+            "command": "./run_upgrade_fromgit.sh",
+            "env": {
+                "LATEST":"true",
+                "CHANNEL":"stable-4.7",
+                "TIMEOUT": "18000",
+                "POLL_INTERVAL":"10"
+            }
+        }  
     ]
 }
